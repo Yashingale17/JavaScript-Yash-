@@ -1,5 +1,7 @@
 const sym1 = Symbol("Key1");
 
+// OBJECT LITERALS....
+
 // objects are in  the key and value pare e.g name : " Yash " key = name and value = "Yash"
 let obj1 = {
     name : "Yash",
@@ -30,3 +32,5 @@ obj1.greeting2 = function() {
 console.log(obj1.greeting());
 console.log(obj1.greeting2());
 
+
+// SINGALTERN OR CONSTRECTURE 
