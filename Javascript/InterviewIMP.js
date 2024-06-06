@@ -57,3 +57,18 @@
           
            Typeof object is object 
            Typeof Array is object */
+
+           console.log(Array.from({name: "Sahil"})); // in this we need to mention of what we need to make array either key or value other wise it will return empty array. 
+
+
+           // Question 
+
+          // Declare a symbole and used it in a object and print the output??
+
+          let mysym = Symbol("Key1"); // syntax 
+
+          let obj1 = {
+            name : "Yash",
+            [mysym] : "key1" // propoer syntex to used it in object.
+          }
+          console.log(obj1[mysym]);

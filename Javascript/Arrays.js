@@ -44,6 +44,33 @@ console.log(splicearr)
 console.log("Org:" , original);
 
 
+let mraval = [ "Irom-man" , "SpiderMan" , "Thor"];
+let dc = ["Batman" , "Flash" , "Superman"];
+
+// mraval.push(dc); // if we use push to combine two array it put an array inside an array.
+// console.log(mraval[3][1]);
+
+let combine = mraval.concat(dc); // concate is the best methord to combine two array as it returns the new array
+console.log(combine);
+
+// another methord to combine two array is a spread operater (...)
+let newcom = [...mraval, ...dc];
+console.log(newcom);
+
+let newyash = ("Yash");
+console.log(Array.isArray(newyash)); // Array.isArray is used to check if given element is array or not it return the output in boolean value 
+
+console.log(Array.from(newyash));   // Array.from is used to convert it into a array 
+
+console.log(Array.from({name: "Sahil"})); // in this we need to mention of what we need to make array either key or value other wise it will return empty array. 
+
+
+let score1 = 100;
+let score2 = 200; 
+let score3 = 300;
+console.log(Array.of(score1 , score2 ,score3)); // Array.of methord convert an set of elements into a singel array 
+
+
 
 
 
