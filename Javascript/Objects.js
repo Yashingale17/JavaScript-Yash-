@@ -33,4 +33,22 @@ console.log(obj1.greeting());
 console.log(obj1.greeting2());
 
 
-// SINGALTERN OR CONSTRECTURE 
+
+
+let user = {
+
+}
+
+user.name= "Yash"
+user.enail = "sahil@gmail.com"
+user.age = 22 
+
+console.log(user);
+
+let obj2 = {
+    name : "Yash",
+    FullName : {
+        name : "Sahil",
+        surname : " Ingale"
+    }
+}
