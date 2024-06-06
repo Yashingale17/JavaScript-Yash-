@@ -52,3 +52,47 @@ let obj2 = {
         surname : " Ingale"
     }
 }
+
+console.log(obj2.FullName.surname);
+
+let com1 = {
+    1:'a',
+    2:"b"
+}
+
+let com2 = {
+    3:"a",
+    4:"b"
+}
+
+let obj3 = Object.assign(com1 , com2); // object.assign is used to combine two objects or concate objects.In it first is a target (com1) and second one is the source (com2) that menas all the data is stored in the target object.
+console.log(obj3)
+console.log(com1)  // If we check the output of the com1 after usinge object.assign methord this will be the combination of com1 and com2 because it sotores the values in the targer object.
+
+
+// two avoide this to storde the data inside the target object we can use this
+// let obj4 = Object.assign({} , com1 , com2);
+// console.log(obj4);
+// console.log(com1);
+
+
+// we can also use spread operater in this as well to combine two operater.
+
+let neww = { a : 1 , b : 2 , c : 3};
+let neww2 = { d : 1 , e : 2 , f : 3};
+
+let num3 = {...neww , ...neww2};
+console.log(num3);
+
+
+let newobj = {
+    name : "Yash",
+    age : 22 ,
+    id : "no"
+}
+
+console.log(Object.keys(newobj)); // it returns the key in the object 
+console.log(Object.values(newobj)); //it returns the value in the object 
+console.log(Object.entries(newobj)); // it put a sepcifics key and values in the saperate array and every specific array inside a array.
+
+console.log(Object.hasOwnProperty('surname')); // it is used to check if we have a key inside of object or not it returns the boolean value.
