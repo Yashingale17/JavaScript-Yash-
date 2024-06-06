@@ -96,3 +96,20 @@ console.log(Object.values(newobj)); //it returns the value in the object
 console.log(Object.entries(newobj)); // it put a sepcifics key and values in the saperate array and every specific array inside a array.
 
 console.log(Object.hasOwnProperty('surname')); // it is used to check if we have a key inside of object or not it returns the boolean value.
+
+
+// Destructuring  and extracting the values from the object
+
+let detail = {
+    Yourname : 'yash Ingale',
+    age : 22 , 
+    edu : "Graduate",
+    gender : "Male"
+}
+
+console.log(detail.Yourname); // we can use dot notation and brackter notation to extract values form the object 
+
+
+// we use this to keep our code clean and easy to understand.
+const {Yourname : Namey} = detail ; // we can also change the name of the key using (:)
+console.log(Namey);
