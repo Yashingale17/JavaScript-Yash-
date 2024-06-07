@@ -11,7 +11,7 @@ console.log(num.toString().length) // now the number is converted into the strin
 console.log(num.toFixed(2)); // output = 100.00 
 
 let num3 = 123.76;
-console.log(num3.toPrecision(3)); // toprecision return you presized value till the range you provide here that is three of 124 as it roundoff the number.
+console.log(num3.toPrecision(3)); // toprecision return you presized value tills the range you provide here that is three of 124 as it roundoff the number.
 
 let locstr = 1000000;
 console.log(locstr.toLocaleString('en-IN')); 

@@ -5,8 +5,8 @@ let name = "Yash Ingale"
 let changeName = name ;
 changeName = "Sahil Ingale";
 
-console.log(name);
 console.log(changeName);
+console.log(name);
 
 
 let obj1 = {
