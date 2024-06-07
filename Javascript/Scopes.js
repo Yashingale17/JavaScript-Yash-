@@ -29,3 +29,18 @@
     nest2()
  }
    nest()
+
+
+   ///////// IMPPPP concept 
+   
+   console.log(num1(5))
+   function num1 (num) {
+    return num  + 1
+   } 
+
+   
+   // this will thow the erros of accessing before initialization because this function is storde inside a variable so you cannot access the variable before initilization
+   console.log(num2(6)) 
+   let num2 = function(num1) {
+    return num1 + 2 
+   }
