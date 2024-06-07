@@ -1,13 +1,5 @@
-/* Q... what are the different data types are present in the js ? 
 
-Primitive and non-primitive 
-
-  primitive data tpyes 
-  string , number , boolean , undefined , Null , BigInt , Synbols 
-
-  Non-primitive data type 
-  Array , Objests and Functions 
-
+/*
   Q.. Difference between “ == “ and “ === “ operators.
 
   both are the comparesion operater and the difference is == is used to compare the values and === is used to compaere both the value and data type 
@@ -52,13 +44,92 @@ console.log(isNaN("123")); // here it converts it to the number as mentioned abo
  It refers to the current object context where a piece of code is being executed. The value of this changes depending on how a function is called and where it's defined.
  e.g*/
  
- let obj1 = {
+ let obj9 = {
   fullName : "Yash Ingale",
   greet : function () {
     console.log(`hello Welcome ${this.fullName}`)
   }
  }
  console.log(obj1)
- obj1.greet();
+ obj9.greet();
 
- /*  */
+ /* is JavaScript a Dynamically types or Static Types?
+
+    JavaScript is a dynamically typed language. This means that the data type of a variable is determined at runtime based on the value assigned to it, unlike statically typed languages where you explicitly declare the type beforehand.*/
+
+
+/* Data Type 
+    Categories of datatype 
+        Primitive and non-primitive 
+        
+        primitive datatype :
+        if we use this data type some where this does not send the original location of memorey where it's stored but it sends the copy and it changes are made it also accures in the copy not at original data. 
+
+        String 
+        Number 
+        booleans 
+        Null 
+        Undefined 
+        Bigint
+        Symbol */
+
+const name = "Yash Ingale";
+let age = 22;
+let compare = (2 === 2);
+let temp = null;
+let und;
+let bigNum = 13243563565645234563462345n;
+let newSymbol = Symbol(" First Synbollll")
+
+console.log(typeof temp);
+/* Typeof null is Object*/
+
+
+
+
+/*  Non-primitive :
+  this is exect apposit to the premitive 
+
+  Array 
+  Objects  
+  Functions 
+  */
+
+const Arr = ["Yash", 3, "Js"];
+
+let newObj = {
+    Name: "Yash Ingale",
+    Age: 22,
+};
+
+let myfunction = function () {
+    console.log("first function");
+};
+
+console.log(typeof Arr);
+
+/* Typeof function is function and we call it as object function
+ 
+ Typeof object is object 
+ Typeof Array is object */
+
+console.log(Array.from({ name: "Sahil" })); // in this we need to mention of what we need to make array either key or value other wise it will return empty array. 
+
+
+// Question 
+
+// Declare a symbole and used it in a object and print the output??
+
+const mySymbol = Symbol("myUniqueKey"); // Create a symbol
+
+let obj1 = {
+  name: "Yash",
+  [mySymbol] : "myUniqueKey"// Use the symbol as a property key
+};
+console.log(typeof obj1[mySymbol]); 
+
+const symbol1 = Symbol("mySymbol");
+const symbol2 = Symbol("anotherSymbol"); 
+
+console.log(typeof symbol1);  // Output: "symbol"
+console.log(typeof symbol2);

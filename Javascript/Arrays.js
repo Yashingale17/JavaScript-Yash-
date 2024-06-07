@@ -21,6 +21,7 @@ Arr.push(10); // Push is used to add inside the array
 console.log(Arr); 
 
 Arr.pop(); // pop removes the last element inside the assay.
+console.log(Arr)
 
 Arr.unshift(10); // add the element at the start of the array 
 console.log(Arr); 
