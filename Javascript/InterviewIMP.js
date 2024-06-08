@@ -104,4 +104,25 @@ let result1 = addnum(val1 + val2);
 let result2 = addnum(10 , 20);
 
 
-/* if a function run 2 time it will create a new variable enviroonment two time here in above example function add num is used 2 times then it will create two new variable environment rether then the first that was created from the start global execution phase is created only once */
+/* if a function run 2 time it will create a new variable enviroonment two time here in above example function add num is used 2 times then it will create two new variable environment and ecexution thread rether then the first that was created from the start global execution phase is created only once */
+
+
+////////////////////////// CALL STACK ///////////////////////////////
+
+/*  */ 
+
+function one () {
+  console.log("One")
+  two()
+}
+function two () {
+  console.log("Two")
+  three()
+}
+function three () {
+  console.log("Three")
+}
+
+one()
+two()
+three()
