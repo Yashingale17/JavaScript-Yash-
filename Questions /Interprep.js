@@ -133,3 +133,8 @@ const symbol2 = Symbol("anotherSymbol");
 
 console.log(typeof symbol1);  // Output: "symbol"
 console.log(typeof symbol2);
+
+
+/* Q.. Ececution contexts 
+ Global Execution context 
+ functional ececution context */ 
