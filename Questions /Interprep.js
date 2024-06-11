@@ -138,3 +138,7 @@ console.log(typeof symbol2);
 /* Q.. Ececution contexts 
  Global Execution context 
  functional ececution context */ 
+
+ /* what is window object  */
+
+ /* window object is a browsers object and not an javascript object it is created by browser and it a global object with lots of properties and methords  */ 
