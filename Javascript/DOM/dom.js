@@ -94,3 +94,22 @@ const changes = document.querySelector("h2");
 //  boxes[2].innerText = "Unique three"
 
 
+let para = document.querySelector("p");
+console.dir(para);
+
+const attrival = para.getAttribute("class"); // this is used to get the value of the attribute in this case the attribute is class and the value of this class is ParaClass.
+console.log(attrival)
+
+const setat = para.setAttribute("id" , "Yash-Ingale") // setattribute is used to set a new attribute it there is no such attribute which we need to set or other wise it will replace the value of attribute 
+console.log(setat);
+
+
+let newhed = document.createElement('p')
+newhed.innerText = "adding heading using append prepand befor and after";
+
+let divv = document.querySelector("div");
+console.log(divv);
+divv.append(newhed.innerText = "append")
+divv.prepend(newhed.innerText = "prepend")
+divv.after(newhed.innerText = "after")
+divv.before(newhed.innerText = "before");
