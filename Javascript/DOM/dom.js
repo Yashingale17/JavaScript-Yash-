@@ -1,24 +1,23 @@
-/* Accessing Element using 
-    getElementById **Id us uniques for every element
-    getElementByClassName
-    getElementByTag */
+// // /* Accessing Element using 
+// //     getElementById **Id us uniques for every element
+// //     getElementByClassName
+// //     getElementByTag */
     
-    const heading = document.getElementById("head1");
-    console.dir(heading);
-    console.log(heading);
-    
-    
-    const classss = document.getElementsByClassName("cleaas2");
-    console.dir(classss);
-    console.log(classss);
-    
-    
-    const tagName = document.getElementsByTagName("h1");
-    console.dir(tagName);
-    console.log(tagName);
+const heading = document.getElementById("head1");
+console.dir(heading);
+console.log(heading);
 
 
-    const query = document.querySelector("h1");
+const classss = document.getElementsByClassName("cleaas2");
+console.dir(classss);
+console.log(classss);
+
+
+const tagName = document.getElementsByTagName("h1");
+console.dir(tagName);
+console.log(tagName);
+
+const query = document.querySelector("h1");
 console.dir(query);
 console.log(query);
 
@@ -79,4 +78,19 @@ const change = document.querySelector("p");
 console.log(change);
 
 change.innerHTML = "Language None to candidates"
-    
+
+
+const changes = document.querySelector("h2");
+ changes.innerText = changes.innerText + " from Yash ingale"
+
+ let idx = 1 
+ let boxes = document.querySelectorAll(".Box");
+ for (const boxess of boxes) {
+    boxess.innerText = `unique for every box ${idx}`
+    idx++
+ }
+//  boxes[0].innerText = "Unique one"
+//  boxes[1].innerText = "Unique two"
+//  boxes[2].innerText = "Unique three"
+
+
