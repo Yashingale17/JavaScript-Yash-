@@ -113,3 +113,24 @@ divv.append(newhed.innerText = "append")
 divv.prepend(newhed.innerText = "prepend")
 divv.after(newhed.innerText = "after")
 divv.before(newhed.innerText = "before");
+
+let remove = document.querySelector("#toremove");
+console.dir(remove.innerText);
+
+remove.remove();
+
+
+const addchild = document.querySelector("#parent");
+// console.log(addchild.innerText);
+const createC = document.createElement("p")
+createC.textContent = "This is a last child";
+
+addchild.appendChild(createC);
+console.log(addchild.innerText)
+
+const parentdiv = document.getElementById("parent");
+// console.log(parentdiv.innerText)
+const toremove = document.getElementById("child3");
+// console.log(toremove.innerText)
+
+parentdiv.removeChild(toremove)
