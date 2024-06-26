@@ -1,5 +1,9 @@
 
 /*
+
+// js is a syncronous language which means in this one code run after other and it is a single threaded language every thing run on single thread 
+
+
   Q.. Difference between “ == “ and “ === “ operators.
 
   both are the comparesion operater and the difference is == is used to compare the values and === is used to compaere both the value and data type 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time</title>
+</head>
+<body>
+    <h1>hello World</h1>
+    <button id="btn">stop</button>
+</body>
+<script>
+
+   const changeh1 = function () {
+    document.querySelector("h1").innerText = "hello Yash"
+   } 
+    const stopp = setTimeout(changeh1,2000)
+
+   
+        document.querySelector("#btn").addEventListener("click" , function () {
+            clearTimeout(stopp);
+            console.log("Stopped");
+        })
+    
+</script>
+</html>
