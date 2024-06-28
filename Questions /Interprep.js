@@ -146,3 +146,9 @@ console.log(typeof symbol2);
  /* what is window object  */
 
  /* window object is a browsers object and not an javascript object it is created by browser and it a global object with lots of properties and methords  */ 
+
+
+//  what is fetch ()
+
+//  Fetch is a function in JavaScript that allows you to retrieve data from a server asynchronously. It's a modern alternative to the older XMLHttpRequest (XHR) method 
+// Fetch uses promises to handle the asynchronous nature of network requests. Promises provide a cleaner and more readable way to write code compared to callbacks used in XHR.
