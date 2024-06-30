@@ -17,12 +17,12 @@ const Winner = (userWin , userChoice , compChoice) => {
     if (userWin) {
         userScore++;
         userSc.innerText = userScore;
-        msg.innerText = ` You Win!!! comp chooses ${compChoice}`;
+        msg.innerText = ` You Win!!! comp chooses ${compChoice} you choose ${userChoice}`;
         msg.style.backgroundColor = "green";
     }else {
         comScore++;
         compsco.innerText = comScore;
-           msg.innerText = `You Loose!!! comp choosers ${compChoice}`;
+           msg.innerText = `You Loose!!! comp choosers ${compChoice} you choose ${userChoice}`;
            msg.style.backgroundColor = "red";
     }
 } 
