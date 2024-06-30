@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    const requestAPI = 'https://api.github.com/users/Yashingale17'
+    const api = new XMLHttpRequest();
+    api.open('GET' , requestAPI)
+    api.onreadystatechange = function () {
+        console.log(api.readyState)
+        if (api.readyState === 4) {
+            const print = JSON.parse(this.responseText);
+            console.log(typeof print)
+            console.log(print.followers)
+        }
+    }
+    api.send()
+
+</script>
+</html>
