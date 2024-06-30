@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello two start and stop</h1>
+    <button id="btn1">Start</button>
+    <button id="btn2">Stop</button>
+</body>
+<script>
+const start = document.querySelector("#btn1")
+const stop = document.querySelector("#btn2")
+
+start.addEventListener('click', () => {
+  const intervalId = setInterval(() => {
+    console.log("Yash ingale", Date.now());
+  }, 1000);
+
+  stop.addEventListener('click', () => {
+    clearInterval(intervalId);
+  });
+});
+
+</script>
+</html>
