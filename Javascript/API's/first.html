@@ -16,8 +16,8 @@
         console.log(api.readyState)
         if (api.readyState === 4) {
             const print = JSON.parse(this.responseText);
-            console.log(typeof print)
-            console.log(print.followers)
+            console.log(typeof print);
+            console.log(print.followers);
         }
     }
     api.send()
