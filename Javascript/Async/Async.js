@@ -34,4 +34,5 @@ callback("Yash" ,name)
 
 //callBack Hell
 
-// Nested callback stacked after one another
+// Nested callback stacked after one another 
+// to solve this we have promises
